@@ -1,0 +1,47 @@
+\usemodule[gantt]
+%% \setuppapersize[A4,landscape][A4,landscape]
+\setuplayout[scale=0.8]
+\setuppagenumbering[location=]
+
+\define[1]\tmonth{\titleelement{#1}{4}}n
+
+\starttext
+  \startgantt[factor=0.8,xunitlength=0.8cm,style=\tfx,titlestyle=\tfx,drawledgerline=true]{24}{28}
+    \startganttitle
+      \tmonth{October}
+      \tmonth{November}
+      \tmonth{December}
+      \tmonth{January}
+      \tmonth{February}
+      \tmonth{March}
+      \tmonth{April}
+    \stopganttitle
+    \startganttitle
+      \titleelement{Week of the month}{28}
+    \stopganttitle
+    \startganttitle
+      \dorecurse{7}{\numtitle{1}{1}{4}{1}}
+    \stopganttitle
+    \ganttgroup{Proposal}{2}{4}
+    \ganttbar{Project definition}{2}{1}
+    \ganttbar{Domain research}{3}{2}
+    \ganttbar{Write-up}{5}{1}
+    \ganttgroup{Design}{6}{6}
+    \ganttbar{Requirements gathering}{6}{2}
+    \ganttbar{Requirements specification}{7}{2}
+    \ganttbar{Architectural model}{9}{1}
+    \ganttbar{State diagram}{9}{1}
+    \ganttbar{UML diagram}{9}{1}
+    \ganttbar{Prototype}{9}{2}
+    \ganttbar{Use case scenarios}{10}{1}
+    \ganttbar{Sequence diagram}{10}{1}
+    \ganttbar{Test plan}{10}{1}
+    \ganttbar{Implementation}{12}{14}
+    \ganttmilestone{Implementation complete}{26}
+    \ganttgroup{Evaluation}{24}{3}
+    \ganttbar{System testing}{24}{1}
+    \ganttbar{Analytical evaluation}{24}{1}
+    \ganttbar{Empirical evaluation}{24}{1}
+    \ganttmilestone{Evaluation complete}{27}
+  \stopgantt
+\stoptext
