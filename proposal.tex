@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{lscape}
 \usepackage{float}
+\usepackage{pdfpages}
 \begin{document}
 \title{Group 8 Integrated Project Proposal\\Project Name Here}
 
@@ -65,14 +66,7 @@ Here we talk about how we will communicate, exchange data, meeting on
 time. This is where we praise version control \&c.
 
 
-% Here we have the last page in landscape, with the chart.
-\begin{landscape}
-\begin{center}
-\hspace*{-1.5in}
-\vspace*{-1.5in}
-\section*{Work plan}
-% We don't have the chart yet.
-%% \includegraphics[height=\textheight,keepaspectratio]{gantt.jpg}
-\end{center}
-\end{landscape}
+% We put the generated chart on the last page.
+\includepdf[pages={1}]{ganttchart.pdf}
+
 \end{document}
