@@ -1,0 +1,30 @@
+\documentclass[10pt,oneside,notitlepage]{report}
+\usepackage[a3paper]{geometry}
+\usepackage{tabularx}
+\usepackage[cm]{fullpage}
+\usepackage{color}
+\begin{document}
+
+\begin{table}[H]
+% \hspace*{-2cm}
+\newcolumntype{S}{>{\small}X}
+\newcolumntype{E}{>{\small}c}
+\begin{tabularx}{\textwidth}{ |X|X|X|X|X|X|X| }
+  \hline
+  \bf{Number} & \bf{Name} & \bf{Objective} & \bf{Conditions} & \bf{Input data} & \bf{Setup} & \bf{Expected results}  \\ \hline
+1 & View Location Success & The user’s location can be seen on the map in the application & The user is on campus and has GPS signal & The location of the user & The Application is loaded, and the position of the user is established & The user’s position is shown on the map \\ \hline
+1.1 & View Location Failure & When the user is not on campus, the user sees an error message & The user is not on campus and has GPS signal & The location of the user & The Application is loaded, and the position of the user is established & An error message informing the user that they cannot use the Application while not on campus \\ \hline
+2 & Share location success & The user is able to share their location with their contacts & The user has a list of contacts they wish to share their location with, and the user is on campus with GPS signal & The location of the user, the contacts with which the location is to be shared & The Application is loaded, the position of the user is established, and the user enables the option for their location to be shared & The user’s contacts are able to see the user’s location on their map \\ \hline
+2.1 & Share location failure & When the user has no GPS signal, they are unable to share their location & The user is on campus and has no GPS signal & None & The Application is loaded, and the user enables the option for their location to be shared & An error message informing the user that they have non GPS signal, and therefore cannot share their location \\ \hline
+3 & Show location of free computers & The application shows the location of free computers on campus, when the user selects to view this information & The user is connected to a network & The user clicks the “free computers” button & The Application is loaded, and the application loads the free computer data from the internet & The user can see the location of free computers on campus \\ \hline
+4 & Find a location & The user can find a certain location on campus and be directed to it. & The user is on campus and has GPS signal & Location of the user, location of the target building  & The Application is loaded, and the location of the user is established. The user then selects a location. & A path from the  user’s location to the building \\ \hline
+5 & Share event location & The user can share the location of a future event with their contacts & The user has created an event, and they are connected to a network & The event details, and the chosen location for the event & The Application is loaded, and the user creates an event, which they then place at a location on the map & The user’s contacts will see the location of the user’s event \\ \hline
+6 & Weather-related background success & The background of the application changes to match the current weather conditions in the user’s location & The user is connected to a network and has GPS signal & The location of the user & The Application is loaded, the location of the user is established and the weather data is collected from the internet & The background of the application will change to match the weather \\ \hline
+6.1 & Weather-related background failure & When the user is not connected to a network, the background reverts to a default setting & The user is not connected to a network & None & The Application is loaded and checks for a network connection & The background of the application is set to a default setting \\ \hline
+7 & Save favourite destinations & The user is able to save their favourite, or most frequent locations into a list & None & The location of the building & The Application is loaded, and the user selects a location they would like added to the list & The user-selected location is added to the list of favourite locations \\ \hline
+8 & Get contact’s location & Upon request, the user can see the location of their contact & The contact in question has allowed their location to be seen and the user is connected to a network & The details of the contact & The Application is loaded, and the user selects a contact whose location they wish to view & The user can see the location of their contact on the map \\ \hline
+9 & Provide relevant information about a location & When a location is selected, relevant information (opening times, no. of floors etc.) is displayed & The user is connected to a network & The location of the building & The Application is loaded, and the user selects a location on campus & Information about the selected location is displayed to the user \\ \hline
+\end{tabularx}
+\caption{Test plan}
+\end{table}
+\end{document}
