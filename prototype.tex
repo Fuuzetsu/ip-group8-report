@@ -42,7 +42,7 @@ The Software Process Model that we have chosen for this application is the incre
 \section*{Requirements}
 \subsection*{Context of Application}
 \subsubsection*{Application type}
- The application is an interactive map of the university of bath. This map will help students and new comers at the university to find major buildings, landmarks, eateries as well as free computer rooms on campus. This application will help students save a lot of time as well as enhance their university experience.
+ The application is an interactive map of the University of Bath. This map will help students and visitors at the university to find major buildings, landmarks, eateries as well as computer rooms on campus. This application will help students save a lot of time as well as enhance their university experience.
 
 \subsubsection*{Problem domain}
 The problem domain is the complexity of the application. The application developers have to make a compromise between having several features versus keeping the application plain and simple with only a few core features.
@@ -52,9 +52,9 @@ The solution offered is somewhere in between both extremes. The app is simple as
 The application also has other small features: get information about the landmark, get a person’s location, save favourite destinations...
 \subsection*{Establishing the requirements}
 The requirements were established by our own domain knowledge and by the help of a survey.
-We were fresher’s last year and wasted a lot of time finding lecture halls and other buildings on campus. The computers in the library were full during peak hours and our lack of knowledge of the location of free computer rooms meant that we had to travel back home to work. Thus, it was our personal experience that led to the establishment of the core requirements. The rest of the requirements were gathered using a survey. \\
+We were freshers last year and wasted a lot of time finding lecture halls and other buildings on campus. The computers in the library were full during peak hours and our lack of knowledge of the location of computer rooms meant that we had to travel back home to work. Thus, it was our personal experience that led to the establishment of the core requirements. The rest of the requirements were gathered using a survey. \\
 
-\textbf{Katie, your Survey will go here}
+See Appendix for the survey and its results.
 \clearpage
 
 \subsection*{Ethics}
@@ -67,8 +67,8 @@ The users of this application are fresher’s and visitors  to the university.  
 \small{
 \begin{enumerate}
 \item{The application must allow a user to view his/her current location on the map. \\
-  \textbf{Rationale}: This will allow new comers to know their exact location on the map.\\
-  \textbf{Success criteria}: upon request, the user should be notified about his current location on the map. This should be done by marking his current location with a marker/ pin.\\
+  \textbf{Rationale}: This will allow users to know their exact location on the map.\\
+  \textbf{Success criteria}: upon request, the user should be notified about his current location on the map. This should be done by marking his current location with a marker/pin.\\
   \textbf{Priority}: 1\\
   \textbf{Source}: domain knowledge.\\
 }
@@ -78,9 +78,9 @@ The users of this application are fresher’s and visitors  to the university.  
   \textbf{Priority}: 2\\
   \textbf{Source}: domain knowledge
 }
-\item{The application will allow the users to view all rooms on campus with free computers. In addition, it will also suggest the closest room among these. \\
-  \textbf{Rationale}: students waste time finding free computers during peak hours. Such a function would allow them to view free computer rooms as well as help them to find the closest ones from their current locations.\\
-  \textbf{Success criteria}: upon request. The user should be able to view all rooms with free computers as well as find the path to the closest room.\\
+\item{The application will allow the users to view all rooms on campus with computers. In addition, it will also suggest the closest room among these. \\
+  \textbf{Rationale}: students waste time finding free computers during peak hours. Such a function would allow them to view computer rooms as well as help them to find the closest ones from their current location.\\
+  \textbf{Success criteria}: upon request. The user should be able to view all rooms with computers as well as find the path to the closest room.\\
   \textbf{Priority}: 1\\
   \textbf{Source}: survey.
 }
@@ -88,42 +88,42 @@ The users of this application are fresher’s and visitors  to the university.  
   \textbf{Rationale}: new comers to the university often find it hard to find locations on campus\\
   \textbf{Success criteria}: upon request, the user should be able to enter his/her destination. The\\
   \textbf{Applications} should then provide the user with the shortest route to the destination.\\
-  \textbf{Priority}: 1.\\
+  \textbf{Priority}: 1\\
   \textbf{Source}: survey
 }
 \item{The application will allow users to share event locations on campus. \\
   \textbf{Rationale}: This will allow users to plan social gatherings/parties and display the location on the map.\\
   \textbf{Success criteria}: upon request, the user should be able to arrange an event and mark it on the map which will be received by users who are currently logged on to the system.\\
   \textbf{Priority}: 3\\
-  \textbf{Source}: Survey
+  \textbf{Source}: survey
 }
 
 \item{The application will inform the users about weather and climatic conditions. The UI of the system will change according to the weather.\\
   \textbf{Rationale}: The weather in Bath is unpredictable and such a feature would inform users about the weather conditions in real time. The changing UI will make the application more intuitive and fun to use.\\
   \textbf{Success Criteria}: upon request, the user should be notified about the weather conditions in real time. The UI should automatically change according to the current climatic conditions.\\
   \textbf{Priority}: 3\\
-  \textbf{Source}: Survey
+  \textbf{Source}: survey
 }
 
 \item{The application will allow users to save their favourite destinations in a list.\\
   \textbf{Rationale}: This will provide to the user a list of top destinations (coffee shop etc.) visited in the past.\\
   \textbf{Success Criteria}: upon request, the user should be able to view a list of favourite destinations stored by the user.\\
   \textbf{Priority}: 3\\
-  \textbf{Source}: Survey
+  \textbf{Source}: survey
 }
 
 \item{The application will allow users to get the precise location of their friends on campus.\\
   \textbf{Rationale}: Such a feature will allow users to find their friends on campus.\\
-  \textbf{Success Criteria}: upon request, the application will provide the exact location of the friend via a pop up widget (pin).\\
+  \textbf{Success Criteria}: upon request, the application will provide the location of the friend via a marker on the map.\\
   \textbf{Priority}: 3\\
-  \textbf{Source}: Survey
+  \textbf{Source}: survey
 }
 
 \item{The application will provide users with useful  information regarding a particular selected landmark. (Example: timings of a coffee shop)\\
   \textbf{Rationale}: Such a feature would provide information such as opening and closing timings of buildings, this would save them valuable time.\\
   \textbf{Success Criteria}: upon request, the application will display information about the selected landmark.\\
   \textbf{Priority}: 3\\
-  \textbf{Source}: Survey
+  \textbf{Source}: survey
 }
 \end{enumerate}
 }
@@ -244,11 +244,11 @@ A pin-shape mark of the destination is displayed on the map. A highlighted path 
 \subsubsection*{Initial status}
 The user already logs on the application and he is accessing the main menu
 \subsubsection*{Normal action}
-The user reaches the main menu and clicks the button “find computers”. The system send query to the BUCS website with information regarding rooms of free computers available in real time. Then the system returns the message and shows all the locations of the rooms of free computers on the campus map according to the website. The user then chooses a location among these choices. The system sends the information regarding user’s choice. The GPS module calculates the shortest path to the location and returns this message to the user.
+The user reaches the main menu and clicks the button “find computers”. The system looks up all rooms with computers and additionally sends a query to BUCS website to ask about computer availability in rooms where this feature is available. Then the system returns the message and shows all the locations of the rooms of computers on the campus map and where possible, informs the user which ones are free. The user then chooses a location among these choices and the application calculates the path to the chosen room.
 \subsubsection*{Possibilities of failure}
-The BUCS website may not provide accurate and real time information about the rooms with free computers. There’s a possibility that the computers in a room may have already been taken up before the information is updated to BUCS website.
+The BUCS website may not provide accurate and real time information about the rooms with free computers. There’s a possibility that the computers in a room may have already been taken up before the information is updated to BUCS website. BUCS only provides free computer information for very limited number of rooms.
 \subsubsection*{Complete state}
-The user is shown the positions of the rooms with free computers on the map. In addition, a shortest path to the chosen destination is also showed on the map.
+The user is shown the positions of the rooms with computers on the map. In addition, a shortest path to the chosen destination is also showed on the map.
 
 \begin{figure}[H]
  \centering
@@ -274,9 +274,9 @@ The user will see the menu background with the image of the latest updated weath
 \subsubsection*{Initial state}
 The user already logs on the application and he is accessing the main menu
 \subsubsection*{Normal action}
-The user logs on the system. He clicks the button with the function to view location. The Map module sends query to the Android positioning server and a message containing user’s current location will be returned. The map module marks the position and represents it to the user.
+The user logs on the system. He clicks the button with the function to view location. The map module sends query to the Android positioning system and a message containing user’s current location will be returned. The map module marks the position and represents it to the user.
 \subsubsection*{Possibilities of failure}
-The majority of the problem comes from the accuracy of the GPS. If the position where the user is at have good signals. There should not be a problem.
+The majority of the problem comes from the accuracy of the GPS. Civilian GPS accuracy is limited to 10 meters precision so the perceived position might be inaccurate to the point of slightly inaccurate position.
 \subsubsection*{Complete state}
 The user can see his current location marked on the map.
 
@@ -284,5 +284,6 @@ The user can see his current location marked on the map.
 
 \includepdf{testplan.pdf}
 \includepdf[landscape=true]{class.pdf}
+\includepdf[pages={-}]{survey.pdf}
 
 \end{document}
