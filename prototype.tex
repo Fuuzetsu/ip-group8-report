@@ -219,6 +219,8 @@ The application will run on an Android mobile device. The design style should be
 \subsection*{Application architecture}
 Our application will follow the client-server model out of necessity. While the basic application use requires no communication with the network, features such as location and event sharing do. As there are no means of easily discovering and communicating with users of the application, user's device will instead connect to the server and communicate with others through there. The sole purpose of the server will be to forward information requests. As we're going to be using public key cryptography to exchange information about events and user locations, initial public key swap is also going to be done through the server. As all other communication will be encrypted, the server is kept in the dark about what locations and events are being transferred. This grants high user privacy and frees us from the burden of taking high security measures ourselves to protect sensitive user data.
 
+The class diagram for the client can be found in the appendix.
+
 \subsection*{Sequence diagrams}
 
 \begin{figure}[H]
